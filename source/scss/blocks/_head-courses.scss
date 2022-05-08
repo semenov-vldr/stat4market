@@ -1,0 +1,194 @@
+.head-courses {
+    position: relative;
+    margin-top: 65px;
+}
+
+.head-courses__ellipse-l {
+    position: absolute;
+    left: -703px;
+    top: -378px;
+}
+
+.head-courses__ellipse-r {
+    position: absolute;
+    right: -721px;
+    top: 222px;
+}
+
+.head-courses__bread-crumbs {
+    font-size: 16px;
+    line-height: 19px;
+    color: #331A2F80;
+}
+
+.bread-crumbs__link {
+    color: inherit;
+}
+
+.head-courses__info {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-courses__wrapper {
+    max-width: 880px;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 80px;
+    margin: 15px 0 40px;
+    color: #331A2F;
+
+    & span {
+        color: #CF51CE;
+    }
+}
+
+.head-courses__price {
+    display: flex;
+    column-gap: 25px;
+}
+
+.head-courses__price-value {
+    color: #331A2FCC;
+    letter-spacing: 2px;
+
+    &  span {
+        font-size: 35px;
+        color: #CF51CE;
+        font-weight: 700;
+        line-height: 55px;
+    }
+}
+
+.head-courses__text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 16px;
+    letter-spacing: 0.3px;
+
+    & p:nth-child(3) span {
+        display: none;
+    }
+}
+
+.head-courses__image {
+    width: 620px;
+    height: 604px;
+    margin-top: 15px;
+
+    &--tablet {
+        display: none;
+    }
+}
+
+// Tablet 1
+@media (max-width: 1619.98px) {
+    .head-courses__wrapper {
+        max-width: 710px;
+    }
+
+    h1 {
+        font-size: 46px;
+        line-height: 65px;
+        margin-bottom: 20px;
+    }
+
+    .head-courses__text {
+        margin-top: 40px;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .head-courses__image {
+        width: 458px;
+        height: 458px;
+        margin-top: 20px;
+        margin-right: 40px;
+    }
+
+    .head-courses__ellipse-l {
+        width: 446px;
+        height: 446px;
+        transform: translateX(-100%);
+        left: 0px;
+        top: -274px;
+    }
+
+    .head-courses__ellipse-r {
+        display: none;
+    }
+}
+
+
+
+// Tablet 2
+@media (max-width: 1279.98px) {
+    .head-courses {
+        margin-top: 45px;
+    }
+
+    .head-courses__wrapper {
+        max-width: 100%;
+    }
+
+    .head-courses__text {
+        max-width: 485px;
+        margin-top: 17px;
+
+        & p:nth-child(3) span {
+            display: inline;
+        }
+    }
+
+    .head-courses__image {
+       display: none;
+
+       &--tablet {
+           display: block;
+            position: absolute;
+            width: 410px;
+            height: 410px;
+            right: 0;
+            top: 148px;
+            transform: translateX(50%);
+       }
+    }
+
+    .head-courses__ellipse-l {
+        display: none;
+    }
+}
+
+
+
+// Mobile
+@media (max-width: 767.98px) {
+    .head-courses {
+        margin-top: 40px;
+    }
+
+    h1 {
+        font-size: 26px;
+        line-height: 39px;
+        margin: 15px 0 24px;
+    }
+
+    .head-courses__text {
+        font-size: 18px;
+        line-height: 28px;
+        gap: 10px;
+    }
+
+    .head-courses__image--tablet {
+         width: 245px;
+         height: 245px;
+         right: 0;
+         top: -25px;
+         transform: translateX(40%);
+    }
+}

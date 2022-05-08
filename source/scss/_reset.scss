@@ -1,0 +1,137 @@
+/* Обнуление */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    font-family: "Lato", sans-serif;
+    height: 100%;
+    line-height: 160%;
+    background-color: #FAFAFA;
+    font-size: 25px;
+    font-weight: 400;
+    color: #331A2FCC;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 1 auto;
+    margin-bottom: 130px;
+}
+
+img {
+    vertical-align: top;
+}
+
+.hidden {
+    display: none;
+}
+
+.br-desktop {
+    display: block;
+}
+
+.br-mobile,
+.br-tablet1,
+.br-tablet2 {
+    display: none;
+}
+
+
+// class="имя блока__container"
+[class*="__container"] {
+    max-width: 1530px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+}
+
+// Desktop
+@media (max-width: 1920px) {
+    [class*="__container"] {
+        max-width: 1530px;
+    }
+}
+
+// Tablet 1
+@media (max-width: 1619.98px) {
+    [class*="__container"] {
+        max-width: 1280px;
+    }
+
+    .br-desktop,
+    .br-mobile,
+    .br-tablet2 {
+        display: none;
+    }
+    .br-tablet1 {
+        display: block;
+    }
+
+}
+
+// Tablet 2
+@media (max-width: 1279.98px) {
+    [class*="__container"] {
+        max-width: 768px;
+    }
+
+    .br-desktop,
+    .br-mobile,
+    .br-tablet1 {
+        display: none;
+    }
+
+    .br-tablet2 {
+        display: block;
+    }
+}
+
+// Mobile
+@media (max-width: 767.98px) {
+    [class*="__container"] {
+        max-width: none;
+    }
+
+    .br-mobile {
+        display: block;
+    }
+
+    .br-desktop,
+    .br-tablet1,
+    .br-tablet2 {
+        display: none;
+    }
+}
