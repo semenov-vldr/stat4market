@@ -12,7 +12,7 @@
 
 <body>
 
-    <div class="wrapper">
+    <div class="wrapper" itemscope itemtype="https://schema.org/Product">
 
         <!-- Header -->
         <header class="header">
@@ -65,22 +65,24 @@
                     <img class="head-courses__ellipse-r" src="../img/BG-Ellipse-r.svg" alt="Ellipse">
 
                     <!-- bread-crumbs -->
-                    <div class="head-courses__bread-crumbs bread-crumbs">
-                        <span><a class="bread-crumbs__link" href="">Главная</a></span> — <span>Обучение</span>
+                    <div class="head-courses__bread-crumbs bread-crumbs" itemscope itemtype="https://schema.org/BreadcrumbList" >
+                        <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a class="bread-crumbs__link" itemprop="item" href="">Главная</a>
+                        </span> — <span>Обучение</span>
                     </div>
                     <!-- head-courses -->
                     <div class="head-courses__info">
                         <div class="head-courses__wrapper">
-                            <h1><span>Обучающие <br class="br-mobile"> курсы</span> для <br class="br-mobile">
+                            <h1 itemprop="name"><span>Обучающие <br class="br-mobile"> курсы</span> для <br class="br-mobile">
                                 поставщиков на <br class="br-mobile"> маркетплейсы</h1>
                             <div class="head-courses__price">
                                 <svg class="head-courses__price-icon" width="48" height="47">
                                     <use xlink:href="./img/sprite.svg#price"></use>
                                 </svg>
 
-                                <p class="head-courses__price-value">от <span>19 900</span> ₽</p>
+                                <p class="head-courses__price-value" itemprop="offers" itemscope itemtype="https://schema.org/offer">от <span itemprop="price">19 900</span><span itemprop="priceCurrency">₽</span></p>
                             </div>
-                            <div class="head-courses__text">
+                            <div class="head-courses__text" itemprop="description">
                                 <p>Обучающие курсы по работе и продвижению на маркетплейсах от практикующих селлеров.</p>
 
                                 <p>Добро пожаловать в Академию. Это место для эффективного обучения, <br
