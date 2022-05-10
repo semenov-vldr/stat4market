@@ -256,7 +256,7 @@ h1 span {
   color: rgba(51, 26, 47, 0.8);
   letter-spacing: 2px;
 }
-.head-courses__price-value span {
+.head-courses__price-value span:nth-child(1) {
   font-size: 35px;
   color: #CF51CE;
   font-weight: 700;
